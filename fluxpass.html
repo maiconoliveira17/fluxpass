@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FluxPass</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style-fluxpass.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+           <a href="../index.html" style="text-decoration: none;"> <h1><span style="color: #bb86fc;">&lt;</span> Maicon Oliveira <span style="color: #bb86fc;">/&gt;</span></h1></a>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                  <!--  <li><a href="../blackHardware/blog.html">Blog</a></li> -->
+                    <li><a href="#contato">Contato</a></li>
+                                     
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="margin-top: 130px;">
+        <section id="intro-projeto" class="hidden">
+            <h2 style="font-size: 3rem; color: #ffffff; margin-bottom: 10px;">FluxPass v2.5</h2>
+            <p style="color: #bb86fc; font-weight: bold; margin-bottom: 30px;">Solução Enterprise para Gestão de Fluxo de Atendimento</p>
+        </section>
+
+         <section id="sobre-projeto" class="hidden" style="margin-top: 50px;">
+            <div class="stat-card" style="text-align: left; border-left: 4px solid #bb86fc;">
+                <h3 style="color: #ffffff; margin-bottom: 15px;">Sobre o Sistema</h3>
+                <p style="color: #cccccc;">
+                    O <strong>FluxPass</strong> é um ecossistema Desktop robusto que elimina a necessidade de nuvem, operando 100% em rede local, permitindo a centralização de dados em um Data Center e a operação distribuída em múltiplos guichês e painéis. <br>
+                    Este sistema foi desenvolvido para otimizar o fluxo de atendimento em repartições de emissão e entrega de documentos. Ele utiliza tecnologia em tempo real para garantir que a chamada no painel seja instantânea assim que o atendente aciona o comando. <br>
+                    Podendo as categorias de senhas serem personalizadas de acordo com a preferência do cliente. <br>
+                    Utilizei <strong>Electron.js</strong> e <strong>Node.js</strong> para criar uma experiência multiplataforma de alta performance, 
+                    com o diferencial estratégico de um algoritmo de licenciamento vinculado ao hardware do cliente.
+                </p> <br>
+                <p><strong>Destaques do projeto:</strong> <br> ✅<strong> Arquitetura Local:</strong> Funciona sem internet, ideal para clínicas, cartórios e órgãos públicos. <br> ✅ <strong>Licenciamento por Hardware:</strong> Desenvolvi um sistema de validação que vincula o software à placa-mãe do cliente, permitindo venda por licenças individuais. <br> ✅<strong>  Tempo Real:</strong> Utilização de WebSockets para garantir que a senha chamada no guichê apareça na TV sem nenhum delay.</p>
+                <div class="project-links" style="justify-content: flex-start; margin-top: 20px;">
+                    <!--<a href="#" class="btn-project"><i class="fa-brands fa-github"></i> Ver Código</a>-->
+                    <a href="#" class="btn-project outline"><i class="fa-solid fa-video"></i> Ver Demo</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-projetos hidden">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/img1.png" alt="Painel do Atendente" loading="lazy">
+                </div>
+                <h3>Gestão de Guichês</h3>
+                <p>Arquitetura multicliente permitindo diversos atendentes operando simultaneamente. <br>
+                  Também é possível visualizar nessa tela as filas de atendimento.  </p>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/img5.png" alt="Tela de Ativação FluxPass" loading="lazy">
+                </div>
+                <h3>Segurança e Licenciamento</h3>
+                <p>Sistema proprietário de ativação vinculado ao Hardware ID (Machine ID) do dispositivo, garantindo o controle de licenças por terminal.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/img3.png" alt="Painel de Atendimento" loading="lazy">
+                </div>
+                <h3>Painel de Emissão</h3>
+                <p>Controle completo de categorias: Entrega, Emissão e Extra (Normal e Prioritário).</p>
+                <p>Essas Categorias podem ser personalizadas de acordo com a preferência do cliente.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/img2.png" alt="Painel de TV" loading="lazy">
+                </div>
+                <h3>Interface de Chamada</h3>
+                <p>Painel público em tempo real utilizando Socket.io para latência zero nas chamadas. <br>
+                    Nessa tela é exibidas as últimas 7 senhas chamadas pelos atendentes.
+                </p>
+            </div>
+
+            
+            
+        </section>
+
+        <div class="formacao-badges" style="flex-direction: row; flex-wrap: wrap; justify-content: center;">
+            <div class="badge-academico"><i class="fa-brands fa-node-js"></i> Node.js</div>
+            <div class="badge-academico"><i class="fa-solid fa-atom"></i> Electron.js</div>
+            <div class="badge-academico"><i class="fa-solid fa-database"></i> SQLite / Local DB</div>
+            <div class="badge-academico"><i class="fa-solid fa-network-wired"></i> Socket.io</div>
+        </div>
+
+        <section id="galeria-sistema" class="container hidden" style="margin-top: 80px;">
+    <h3 style="text-align:center; margin-bottom: 40px; color: #bb86fc;">Galeria do Ecossistema</h3>
+    
+    <div class="galeria-grid">
+        <div class="galeria-item">
+            <img src="img/img6.png" alt="Servidor FluxPass Online" loading="lazy">
+            <div class="galeria-overlay">Servidor de Rede Local</div>
+        </div>
+
+        <div class="galeria-item">
+            <img src="img/img7.png" alt="Tela de Conexão de Terminal" loading="lazy">
+            <div class="galeria-overlay">Configuração de Terminal</div>
+        </div>
+
+        <div class="galeria-item">
+            <img src="img/img9.png" alt="Painel de Emissão" loading="lazy">
+            <div class="galeria-overlay">Totem de Emissão de Senha</div>
+        </div>
+
+        <div class="galeria-item">
+            <img src="img/img10.png" alt="Controle do Atendente" loading="lazy">
+            <div class="galeria-overlay">Interface de Atendimento</div>
+        </div>
+
+        <div class="galeria-item">
+            <img src="img/img11.png" alt="Painel de Chamada Público" loading="lazy">
+            <div class="galeria-overlay">Painel Público (TV)</div>
+        </div>
+
+        <div class="galeria-item">
+            <img src="img/img5.png" alt="Segurança de Software" loading="lazy">
+            <div class="galeria-overlay">Ativação por Hardware</div>
+        </div>
+    </div>
+</section>
+      
+
+        <section class="container hidden">
+    <h3 style="text-align:center; margin-bottom: 30px;">Recursos Enterprise</h3>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-date">Módulo de Atendimento</div>
+            <div class="timeline-content">Chamada de senhas por voz sintetizada e painel visual.</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">Segurança</div>
+            <div class="timeline-content">Algoritmo MD5 para bloqueio de cópias não autorizadas.</div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <section id="infraestrutura" class="container hidden" style="margin-top: 80px;">
+    <h3 style="text-align:center; margin-bottom: 40px; color: #bb86fc;">Infraestrutura e Conectividade Local</h3>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+        
+        <div class="stat-card" style="flex: 1; min-width: 300px; text-align: left;">
+            <img src="img/img6.png" alt="Status do Servidor" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+            <h4 style="color: #fff;">Servidor Centralizado</h4>
+            <p style="font-size: 0.9rem; color: #ccc;">O núcleo do sistema fornece os IPs da rede local para que todos os guichês e painéis se conectem sem depender de internet externa.</p>
+        </div>
+
+        <div class="stat-card" style="flex: 1; min-width: 300px; text-align: left;">
+            <img src="img/img7.png" alt="Tela de Conexão do Terminal" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+            <h4 style="color: #fff;">Terminais Clientes</h4>
+            <p style="font-size: 0.9rem; color: #ccc;">Interface simplificada para conexão de novos pontos de atendimento, garantindo escalabilidade rápida dentro da infraestrutura do cliente.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contato" class="container hidden">
+        <h2>Entre em Contato</h2>
+        <div class="contato-wrapper">
+            <form action="https://formspree.io/f/xwvvvlkb" method="POST" class="contato-form">
+                
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="name" id="nome" placeholder="Seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="message" id="mensagem" rows="5" placeholder="Como posso te ajudar?" required></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">
+                    Enviar Mensagem <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+            <div id="form-status" style="margin-top: 20px; font-weight: bold; text-align: center;"></div>
+        </div>
+    </section>
+
+    <footer class="hidden">
+        <div class="container footer-content">
+            <p>&copy; 2026 Maicon Oliveira. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://github.com/maiconoliveira17" target="_blank" class="social-icon" data-tooltip="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/maicon-oliveira-39b666195/" target="_blank" class="social-icon" data-tooltip="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="mailto:maiconoliveira.tec@gmail.com" class="social-icon" data-tooltip="E-mail">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
